@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from '../shared/atoms/button';
 import { FleeingButton } from '../shared/atoms/fleeing-button';
 import { ImageComponent } from '../shared/atoms/image';
