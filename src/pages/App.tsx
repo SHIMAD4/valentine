@@ -9,18 +9,18 @@ function App() {
 
     const handleImage = () => {
         setTimeout(() => {
-            setShowImages(true); // Устанавливаем состояние showImages в true после 700 мс
+            setShowImages(true);
         }, 700);
     };
 
     return (
         <div className={styles.buttonWrapper}>
             {showImages ? (
-                <ImageComponent /> // Отображаем картинку, если showImages равно true
+                <ImageComponent />
             ) : (
                 <>
                     <p>Будешь моей валентинкой????</p>
-                    <Button title="Да" onClick={handleImage} /> {/* При клике на кнопку "Да" вызываем функцию handleImage */}
+                    <Button title="Да" onClick={handleImage} />
                     <FleeingButton title="Нет" />
                 </>
             )}

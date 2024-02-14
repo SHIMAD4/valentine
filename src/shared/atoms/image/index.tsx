@@ -19,7 +19,7 @@ export const ImageComponent: FC = () => {
     return (
         <div className={styles.imageWrapper}>
             <img
-                src="public/grave.jpg"
+                src="grave.jpg"
                 alt="Your Image"
                 style={{ width: windowSize.width < 500 ? windowSize.width * 0.8 : windowSize.width * 0.6 , height: windowSize.width < 500 ? windowSize.height * 0.3 : windowSize.height * 0.8 }}
             />
