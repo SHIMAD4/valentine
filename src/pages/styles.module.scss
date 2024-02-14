@@ -1,0 +1,14 @@
+.buttonWrapper {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  > button {
+    left: 30%;
+  }
+
+  > p {
+    font-size: 2rem;
+  }
+}
