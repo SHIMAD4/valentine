@@ -52,6 +52,8 @@ header {
 
 // Main content styles
 main {
+    padding: 0 1rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +62,20 @@ main {
     flex-grow: 1;
 
     section {
-        p {
+        #counterParent {
+            margin-top: 1rem;
+
+            display: block;
+            
+            color: $main-text-color;
+
+            text-align: center;
+            text-decoration: none;
+            
+            cursor: default;
+        }
+
+        p, a {
             @media screen and (min-width: 425px) {
                 font-size: 1.5rem;
             }
