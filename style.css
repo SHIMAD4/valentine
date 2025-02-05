@@ -1,1 +1,53 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+header {
+  padding: 1rem 0 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  border-bottom: 0.2rem solid rgb(223, 125, 141);
+  border-radius: 1rem;
+}
+header h1 span {
+  color: rgb(223, 125, 141);
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  border-top: 0.2rem solid rgb(223, 125, 141);
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+footer p {
+  font-size: 1rem;
+  text-align: right;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  list-style-type: none;
+}
+footer ul li a {
+  color: rgb(223, 125, 141);
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

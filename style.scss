@@ -1,0 +1,87 @@
+// Variables
+$main-bg-color: black;
+$main-text-color: white;
+$pickMe-accent-color: rgb(223, 125, 141);
+
+
+// Main styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background-color: $main-bg-color;
+    color: $main-text-color;
+}
+
+
+// Header styles
+header {
+    padding: 1rem 0 1rem;
+
+    font-size: .8rem;
+    text-align: center;
+
+    border-bottom: 0.2rem solid $pickMe-accent-color;
+    border-radius: 1rem;
+
+    h1 {
+        span {
+            color: $pickMe-accent-color;
+        }
+    }
+}
+
+
+// Main content styles
+main {
+    flex-grow: 1;
+
+    // section {}
+    // section {}
+    // section {}
+}
+
+
+// Footer styles
+footer {
+    width: 100%;
+
+    padding: 1rem;
+
+    border-top: 0.2rem solid $pickMe-accent-color;
+    border-radius: 1rem;
+
+    flex-shrink: 0;
+    
+    p {
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+
+        list-style-type: none;
+
+        li {
+            a {
+                color: $pickMe-accent-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
