@@ -10,24 +10,49 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: black;
   color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
   padding: 1rem 0 1rem;
-  font-size: 0.8rem;
-  text-align: center;
   border-bottom: 0.2rem solid rgb(223, 125, 141);
   border-radius: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
 header h1 span {
   color: rgb(223, 125, 141);
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
+}
+main section span {
+  color: rgb(223, 125, 141);
+}
+main section div {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+main section div button {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border: 0.12rem solid rgb(223, 125, 141);
+  border-radius: 0.3rem;
+  background-color: transparent;
+  color: white;
+}
+main section div button:disabled {
+  border-color: grey;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 footer {
