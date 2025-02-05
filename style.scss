@@ -35,12 +35,16 @@ header {
     border-bottom: 0.2rem solid $pickMe-accent-color;
     border-radius: 1rem;
 
-    font-size: .8rem;
-    text-align: center;
-
     h1 {
+        font-size: .8rem;
+        text-align: center;
+        
         span {
             color: $pickMe-accent-color;
+        }
+
+        @media screen and (min-width: 1440px) {
+            font-size: 3rem;
         }
     }
 }
@@ -56,6 +60,20 @@ main {
     flex-grow: 1;
 
     section {
+        p {
+            @media screen and (min-width: 425px) {
+                font-size: 1.5rem;
+            }
+
+            @media screen and (min-width: 768px) {
+                font-size: 2rem;
+            }
+
+            @media screen and (min-width: 1920px) {
+                font-size: 2.4rem;
+            }
+        }
+
         span {
             color: $pickMe-accent-color;
         }
@@ -81,6 +99,16 @@ main {
                     border-color: grey;
                     color: rgba(255, 255, 255, 0.4);
                 }
+
+                @media screen and (min-width: 425px) {
+                    font-size: 1.2rem;
+                }
+
+                @media screen and (min-width: 768px) {
+                    padding: 1rem 2rem 1rem 2rem;
+
+                    font-size: 1.8rem;
+                }
             }
         }
     }
@@ -101,6 +129,14 @@ footer {
     p {
         font-size: 1rem;
         text-align: right;
+
+        @media screen and (min-width: 425px) {
+            font-size: 1.2rem;
+        }
+
+        @media screen and (min-width: 1440px) {
+            font-size: 1.5rem;
+        }
     }
 
     ul {
@@ -115,6 +151,14 @@ footer {
                 color: $pickMe-accent-color;
 
                 text-decoration: none;
+            }
+
+            @media screen and (min-width: 425px) {
+                font-size: 1.2rem;
+            }
+
+            @media screen and (min-width: 1440px) {
+                font-size: 1.5rem;
             }
         }
     }
